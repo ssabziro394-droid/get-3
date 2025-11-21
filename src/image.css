@@ -1,6 +1,7 @@
 .bg-image{
     background-image:url(../firstSection.png);
-    height: 900px;
-    margin-left: 80px;
+    height: 850px;
+    width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
