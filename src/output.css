@@ -7,7 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -168,32 +175,23 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .flex {
     display: flex;
-  }
-  .table {
-    display: table;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
-  .w-\[90\%\] {
-    width: 90%;
+  .w-35 {
+    width: calc(var(--spacing) * 35);
   }
-  .w-\[90\] {
-    width: 90;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
+  .w-\[80\%\] {
+    width: 80%;
   }
   .items-center {
     align-items: center;
@@ -201,94 +199,50 @@
   .justify-between {
     justify-content: space-between;
   }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
-  .gap-30 {
-    gap: calc(var(--spacing) * 30);
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .rounded-\[5px\] {
+    border-radius: 5px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .bg-\[\#013A4C\] {
+    background-color: #013A4C;
+  }
   .bg-\[\#FFD063\] {
     background-color: #FFD063;
   }
-  .bg-\[\.\] {
-    background-color: .;
-  }
-  .bg-\[url\] {
-    background-color: url;
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
-  }
-  .bg-\[url\(\.\)\] {
-    background-image: url(.);
-  }
-  .bg-\[url\(\.\/\)\] {
-    background-image: url(./);
-  }
-  .bg-\[url\(\/\)\] {
-    background-image: url(/);
-  }
-  .bg-\[url\(\/img\)\] {
-    background-image: url(/img);
-  }
-  .bg-\[url\(\/img\/\)\] {
-    background-image: url(/img/);
-  }
-  .bg-\[url\(\/img\/Re\)\] {
-    background-image: url(/img/Re);
-  }
-  .bg-\[url\(\/img\/Rectange\)\] {
-    background-image: url(/img/Rectange);
-  }
-  .bg-\[url\(\/img\/Rectangl\)\] {
-    background-image: url(/img/Rectangl);
-  }
-  .bg-\[url\(\/img\/Rectangle\(\)\)\] {
-    background-image: url(/img/Rectangle());
-  }
-  .bg-\[url\(\/img\/Rectangle\(2\)\)\] {
-    background-image: url(/img/Rectangle(2));
-  }
-  .bg-\[url\(\/img\/Rectangle\(2\)\.png\)\] {
-    background-image: url(/img/Rectangle(2).png);
-  }
-  .bg-\[url\(\/img\/Rectangle\)\] {
-    background-image: url(/img/Rectangle);
-  }
-  .bg-\[url\(\/img\/Rectangle9\)\] {
-    background-image: url(/img/Rectangle9);
+  .p-60 {
+    padding: calc(var(--spacing) * 60);
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
-  .underline {
-    text-decoration-line: underline;
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-white {
+    color: var(--color-white);
   }
 }
 @property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -297,7 +251,6 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-outline-style: solid;
     }
   }
 }
