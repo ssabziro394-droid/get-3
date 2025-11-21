@@ -221,6 +221,9 @@
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
+  .h-300 {
+    height: calc(var(--spacing) * 300);
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -289,6 +292,21 @@
   }
   .w-\[99\%\] {
     width: 99%;
+  }
+  .w-\[99\,9\] {
+    width: 99,9;
+  }
+  .w-\[99\,\] {
+    width: 99,;
+  }
+  .w-\[99\.9\%\] {
+    width: 99.9%;
+  }
+  .w-\[99\.9\] {
+    width: 99.9;
+  }
+  .w-\[99\] {
+    width: 99;
   }
   .w-\[100\%\] {
     width: 100%;
