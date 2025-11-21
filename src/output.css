@@ -187,6 +187,9 @@
   .m-auto {
     margin: auto;
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -217,8 +220,14 @@
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
+  }
   .mr-40 {
     margin-right: calc(var(--spacing) * 40);
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
   }
   .flex {
     display: flex;
@@ -334,11 +343,38 @@
   .w-200 {
     width: calc(var(--spacing) * 200);
   }
+  .w-\[\%\] {
+    width: %;
+  }
   .w-\[1--\] {
     width: 1--;
   }
   .w-\[1\] {
     width: 1;
+  }
+  .w-\[4\%\] {
+    width: 4%;
+  }
+  .w-\[35\%\] {
+    width: 35%;
+  }
+  .w-\[35\] {
+    width: 35;
+  }
+  .w-\[37\%\] {
+    width: 37%;
+  }
+  .w-\[38\%\] {
+    width: 38%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -394,11 +430,20 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-30 {
+    gap: calc(var(--spacing) * 30);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -429,8 +474,15 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .bg-\[\#013A4C\] {
     background-color: #013A4C;
+  }
+  .bg-\[\#99B0B7\] {
+    background-color: #99B0B7;
   }
   .bg-\[\#B73D8B\] {
     background-color: #B73D8B;
@@ -464,6 +516,9 @@
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
   .pt-7 {
     padding-top: calc(var(--spacing) * 7);
@@ -506,6 +561,9 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -561,6 +619,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[\#99B0B7\] {
+    color: #99B0B7;
   }
   .text-\[\#89285B\] {
     color: #89285B;
