@@ -5,3 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.aq1{
+    background-image: url(../amir.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 990px;
+}
